@@ -6,17 +6,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Res/bomb.ico">
     <title>Campo Minado</title>
 </head>
 <body>
-    <center>
-        <h1>Campo Minado</h1>
-        <button onclick="facil()">facil</button>
-        </select>
-        <button onclick="gerarcampo()">Gerar</button>
-        <button onclick="act_bombs()">act_bombs</button>
-        <div id="campo"></div>
-    </center>
+
+    <section class = "pag1" >
+        <button id = "button" onclick="">INICIAR</button>
+        <img id="codigobarra" src="Res/codigo de barra.png" alt="">
+    </section>
+
+    <section class = "pag2" style="display: none;">
+        <div id = "retangulo"></div>
+        <div id="cont_pag2">
+        <p id = "texto2">Selecione sua dificuldade:</p>
+        <button id = "button1" onclick="">INICIANTE</button>
+        <button id = "button2" onclick="">INTERMEDIÁRIO</button>
+        <button id = "button3" onclick="">AVANÇADO</button>
+        </div>
+    </section>
+
+    <section class = "pag3" style="display: none;">
+        <div id = "quadrado_info"></div>
+        <div class="info">
+        <div id = "dificuldade"><label id = "dificuldadeX">INTERMEDIÁRIO</label></div>
+        <img id = bandeira src="Res/bandeira.png" alt="">
+        <label id = "bandeiraX">10</label>
+        <img id = timer src="Res/relogio.png" alt="">
+        <label id = "timerX">10:00</label>
+        </div>
+        <div id = "campo"></div>
+    </section>
+
+    <section class = "popup" style="display: none;">
+        <div id = "retangulo2">
+        <div class="info_status">
+        <div id="cabecalho_status">
+        <img id = bandeira src="Res/bandeira.png" alt="">
+        <label id = "bandeiraX">10</label>
+        <img id = timer src="Res/relogio.png" alt="">
+        <label id = "timerX">10:00</label>
+        </div>
+        <label id = "status">VOCE VENCEU!</label>
+        <img id = "img_status" src="Res/trofeu.png" alt="">
+        </div>
+        <button id = "jogar_novamente" onclick="">JOGAR NOVAMENTE</button>
+        </div>
+    </section>
+
 </body>
 </html>
