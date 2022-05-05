@@ -9,35 +9,41 @@
     <title>Campo Minado</title>
 </head>
 <body>
-
-    <section class = "pag1">
-        <button id = "button" onclick="">INICIAR</button>
+    <section id="p1" class = "pag1" >
+        <button id = "button" onclick="iniciar()">INICIAR</button>
         <img id="codigobarra" src="Res/codigo de barra.png" alt="">
     </section>
 
-    <section class = "pag2" style="display: none;">
-        <div id = "retangulo"></div>
+    <section id="p2" class = "pag2" style="display: none;">
+        <div id = "retangulo">
         <div id="cont_pag2">
         <p id = "texto2">Selecione sua dificuldade:</p>
-        <button id = "button1" onclick="">INICIANTE</button>
-        <button id = "button2" onclick="">INTERMEDIÁRIO</button>
-        <button id = "button3" onclick="">AVANÇADO</button>
-        </div>
+        <button id = "button1" onclick="facil()">INICIANTE</button>
+        <button id = "button2" onclick="intermediario()">INTERMEDIÁRIO</button>
+        <button id = "button3" onclick="avancado()">AVANÇADO</button>
+        </div></div>
     </section>
 
-    <section class = "pag3" style="display: none;">
+    <section id="p3" class = "pag3" style="display: none;">
         <div id = "quadrado_info"></div>
+        <div id="cabecalho">
         <div class="info">
         <div id = "dificuldade"><label id = "dificuldadeX">INTERMEDIÁRIO</label></div>
         <img id = bandeira src="Res/bandeira.png" alt="">
         <label id = "bandeiraX">10</label>
         <img id = timer src="Res/relogio.png" alt="">
         <label id = "timerX">10:00</label>
+        </div></div>
+        <div onclick="popup()" id = "campo">
+            <center>
+            \\\\\\\\\\\\\\\\\\\\
+            // campo de bombs //
+            \\\\\\\\\\\\\\\\\\\\
+            </center>
         </div>
-        <div id = "campo"></div>
     </section>
 
-    <section class = "popup" style="display: none;">
+    <section id="popup" class = "popup" style="display: none;">
         <div id = "retangulo2">
         <div class="info_status">
         <div id="cabecalho_status">
@@ -49,7 +55,7 @@
         <label id = "status">VOCE VENCEU!</label>
         <img id = "img_status" src="Res/trofeu.png" alt="">
         </div>
-        <button id = "jogar_novamente" onclick="">JOGAR NOVAMENTE</button>
+        <button id = "jogar_novamente" onclick="jogarnov()">JOGAR NOVAMENTE</button>
         </div>
     </section>
 
