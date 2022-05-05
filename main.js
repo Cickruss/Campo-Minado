@@ -16,7 +16,6 @@ function avancado(params) {
     colunas = 20
 }
 
-
 function gerarcampo(params) {
     for (let i = 0; i < linhas; i++) {
         campo[i] = []
