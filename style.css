@@ -109,7 +109,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 27%;
 }
 #quadrado_info{
     position: absolute;
@@ -119,15 +118,7 @@ body{
     border-radius: 23px;
     z-index: 1000;
 }
-#cabecalho{
-    position: relative;
-    width: 600px;
-    height: 110px;
-    margin-left: 10%;
-    z-index: 20000;
-}
 .info{
-    margin-top: 25px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -137,8 +128,6 @@ body{
 #dificuldade{
     font-family: 'iceberg',monospace;
     padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
     border: none;
     font-size: 30px;
     color:#E6920F;
@@ -165,15 +154,14 @@ body{
 #timer{
     width: 50px;
     height: 50px;
-    margin-top: 5%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .timerX{
     font-family: 'iceberg',monospace;
     color:#FFFFFF;
-    margin-top:5%;
     font-size: 40px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 400px;
 }
 .popup{
     display: flex;
@@ -191,7 +179,6 @@ body{
     margin-top: 4%;
 }
 .info_status{
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,46 +218,26 @@ body{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
-#retangulo_campo{
-    width: 900px;
-    height: 800px;
-    background: #5B5B5B;
-    border-radius: 23px;
-    margin-top: 1%;
+
+#campo{
+    padding-top: 1%;
+    border: solid 0.5;
 }
-.quadrado_campo_inicante{
-    background-color: #898989;
-    color:#898989;
-    padding: 33px;
-    border-radius: 5%;
-    border: solid 2px #5B5B5B;
+.iniciante{
     width: 50px;
     height: 50px;
-    justify-content: center;
-    cursor: pointer;
+    background-color: #5B5B5B;
+    color: white;
 }
-.quadrado_campo_intermediario{
-    background-color: #898989;
-    color:#898989;
-    padding: 18.5px;
-    border-radius: 5%;
-    border: solid 1px #5B5B5B;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    cursor: pointer;
+.intermediario{
+    width: 35px;
+    height: 35px;
+    background-color: #5B5B5B;
+    color: white;
 }
-.quadrado_campo_avancado{
-    background-color: #898989;
-    color:#898989;
-    padding: 13px;
-    border-radius: 5%;
-    border: solid 0.5px #5B5B5B;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    cursor: pointer;
-}
-#campo{
-    padding-top: 6%;
+.avancado{
+    width: 25px;
+    height: 25px;
+    background-color: #5B5B5B;
+    color: white;
 }
